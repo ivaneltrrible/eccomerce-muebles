@@ -1,3 +1,7 @@
+:root {
+  --color-principal: #286c9c;
+  --color-secundario: #326285;
+}
 html {
   box-sizing: border-box;
 }
@@ -11,6 +15,7 @@ a {
 }
 img {
   max-width: 100%;
+  display: block; /*se coloca para que img tome todo el espacio disponible */
 }
 .container {
   max-width: 1200px;
@@ -83,7 +88,23 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-
+.categorias h2 {
+  text-align: center;
+}
+.categoria a {
+  margin: 0;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  background-color: var(--color-principal);
+  color: #e1e1e1;
+  transition: border-radius 0.5s ease;
+}
+.categoria a:hover {
+  background-color: var(--color-secundario);
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
 /**Box Model */
 .sobre-nosotros {
   background-color: red;
