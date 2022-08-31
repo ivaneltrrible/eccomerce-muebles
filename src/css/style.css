@@ -4,9 +4,16 @@
 }
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-family: 'Raleway', sans-serif;
+  
 }
 /**  Globales **/
 a {
@@ -17,26 +24,41 @@ img {
   max-width: 100%;
   display: block; /*se coloca para que img tome todo el espacio disponible */
 }
+h1,
+h2,
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 0 2rem 0; 
+}
+h1 { font-size:5rem }
+h2 { font-size:4rem }
+h3 { font-size:3rem }
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
   margin-inline: auto;
 }
 .nombre-sitio {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 5rem;
   text-align: center;
 }
 .nombre-sitio span {
   color: #037bc0;
 }
+/**UTILS */
+.text-center {
+  text-align: center;
+}
+.mp-5 {
+  padding-top: 5rem;
+}
+
 /**############## Navegacion ####################### */
 .nav-principal {
   border-top: 1px solid rgb(212, 211, 211);
   width: 75%;
-  padding: 20px 0;
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
-  /*align-items: center;*/
 }
 .nav-principal a:hover {
   background-color: #e1e1e1;
@@ -47,67 +69,107 @@ img {
 .hero {
   /*background-image: url(../images/principal.jpg);*/
   width: 100%;
-  height: 550px;
+  height: 55rem;
 }
 
 
 .loader {
-  width: 64px;
-  height: 48px;
+  width: 6.4rem;
+  height: 4.8rem;
   position: relative;
   animation: split 1s ease-in infinite alternate;
 }
 .loader::before , .loader::after {
   content: '';
   position: absolute;
-  height: 48px;
-  width: 48px;
+  height: 4.8rem;
+  width: 4.8rem;
   border-radius: 50%;
   left: 0;
   top: 0;
   transform: translateX(-10px);
   background: #FF3D00;
   opacity: 0.75;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(2rem);
 }
 
 .loader::after {
   left: auto;
   right: 0;
   background: #037BCF;
-  transform: translateX(10px);
+  transform: translateX(1rem);
 }
 
 @keyframes split {
-  0% , 25%{ width: 64px }
-  100%{ width: 148px }
+  0% , 25%{ width: 6.4rem }
+  100%{ width: 14.8rem }
 }
 /**LISTADO CATEGORIAS ************************************************ */
 .listado-categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 1rem;
 }
-.categorias h2 {
-  text-align: center;
-}
+
 .categoria a {
   margin: 0;
   text-align: center;
   display: block;
-  padding: 20px;
+  padding: 2rem;
   background-color: var(--color-principal);
   color: #e1e1e1;
   transition: border-radius 0.5s ease;
 }
 .categoria a:hover {
   background-color: var(--color-secundario);
-  border-bottom-right-radius: 40px;
-  border-top-left-radius: 40px;
+  border-bottom-right-radius: 4rem;
+  border-top-left-radius: 4rem;
 }
 /**Box Model */
+
+/** BLOQUE DE SOBRE NOSOTROS ******/
 .sobre-nosotros {
-  background-color: red;
-  width: 200px;
-  padding: 25px;
+  margin-top: 2rem;
+  padding: 10rem 0;
+  background-image: linear-gradient( to right, transparent 50%, var(--color-principal) 50%, black 100%),
+  url('../ImagenesGamer/sobre-nosotros-gamer.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100%, 120rem;
+}
+.sobre-nosotros-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+.texto-nosotros {
+  flex-basis: 50%;
+  padding-left: 10rem;
+}
+.texto-nosotros h2 {
+  color: #e1e1e1;
+}
+.texto-nosotros p {
+  color: #aca0a0;
+  font-size: 1.8rem;
+}
+/**CONTENIDO PRINCIPAL CATEGORIA PRODUCTOS ****************************/
+/* .contenido-principal {
+  padding-top:5rem;
+} */
+.producto { 
+  background-color: var( --color-secundario);
+}
+.texto-producto {
+  text-align: center;
+  color: #e1e1e1;
+}
+.texto-producto h3 {
+  margin-bottom: 0;
+}
+.texto-producto p {
+  margin: 0 0 .4rem 0;
+}
+.texto-producto .precio {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
