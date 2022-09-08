@@ -52,7 +52,8 @@ h3 { font-size:3rem }
 }
 .container {
   max-width: 120rem;
-  margin-inline: auto;
+  margin: 0 auto;
+  width: 75%;
 }
 .nombre-sitio {
   margin-top: 5rem;
@@ -239,14 +240,37 @@ h3 { font-size:3rem }
 /** FOOTER **************/
 .site-footer {
   border-top: 1px solid #e1e1e1;
-  margin-top: 5rem;
+  margin-top: 8rem;
   padding-top: 4rem;
 }
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 .nav-footer {
   display: flex;
   flex-direction: column;
 }
+.site-footer .copyright {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/***** Section *****/
+/*********************SOBRE NOSOTROS PAGE **********************/
+
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+.img-sobre-nosotros {
+  height: 27rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 9%;
+  box-shadow: 10px 6px 21px 0px rgba(0,0,0,0.75);
+}
+
+/***** End Section *****/
