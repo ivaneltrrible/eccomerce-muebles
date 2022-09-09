@@ -263,14 +263,19 @@ h3 { font-size:3rem }
 .contenido-nosotros {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 5rem;
 }
 .img-sobre-nosotros {
-  height: 27rem;
   width: 100%;
   object-fit: cover;
   border-radius: 9%;
   box-shadow: 10px 6px 21px 0px rgba(0,0,0,0.75);
+}
+.informacion-nosotros {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /***** End Section *****/
