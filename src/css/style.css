@@ -46,6 +46,7 @@ h3 { font-size:3rem }
   display: block;
   font-weight: 700;
   transition: background-color .3s ease;
+  text-align: center;
 }
 .btn:hover {
   background-color: var(--background-color-btn-hover);
@@ -68,6 +69,9 @@ h3 { font-size:3rem }
 }
 .mp-5 {
   padding-top: 5rem;
+}
+.max-width-30 {
+  max-width: 30rem;
 }
 
 /**############## Navegacion ####################### */
@@ -283,6 +287,29 @@ h3 { font-size:3rem }
 
 /***** Section *****/
 /*********************BLOG PAGE **********************/
-
-
+.contenedor-blog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.entrada {
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+  border: none;
+}
+.entrada-meta {
+  display: flex;
+  justify-content: space-between;
+}
+.entrada-meta p {
+  font-weight: bold;
+}
+.entrada-meta span {
+  color: var(--color-secundario);
+}
+.contenido-entrada-blog {
+  width: 60rem;
+}
 /***** End Section *****/

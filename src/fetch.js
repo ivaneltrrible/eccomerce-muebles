@@ -22,6 +22,7 @@ async function fetchImg() {
 }
 fetchImg()
   .then(urlImg => {
+    console.log("🚀 ~ file: fetch.js ~ line 25 ~ urlImg", urlImg)
     // const imgCompress = new Compressor(urlImg)
     img.src = urlImg;
     img.onload = function () {
