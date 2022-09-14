@@ -31,6 +31,8 @@
   <main class="container">
     <h2 class="text-center">Guia de Procesadores</h2>
     <form action="">
+
+
       <fieldset>
         <legend>Datos Personales</legend>
 
@@ -51,14 +53,52 @@
           <label for="tel">Telefono: </label>
           <input type="tel" name="" id="tel" placeholder="Coloca tu Telefono">
         </div>
+        <div class="campo">
+          <label for="mensaje">Telefono: </label>
+          <textarea name="" id="mensaje" cols="20" rows="10"></textarea>
+        </div>
 
       </fieldset>  
+
       <fieldset>
         <legend>Pais</legend>
+        <div class="campo">
+          <label for="pais">Pais: </label>
+          <select name="" id="pais">
+            <option value="" disabled>--Seleccione--</option>
+            <option value="">Mexico</option>
+            <option value="" selected>EUA</option>
+            <option >Chile</option>
+            <option >Peru</option>
+            <option >Colombia</option>
+          </select>
+        </div>
       </fieldset>
+
+
       <fieldset>
         <legend>Information Extra</legend>
+        <div class="campo">
+          <label for="cliente">Cliente</label>
+          <input type="radio" name="tipo-cliente" id="cliente" value="cliente">
+        </div>
+        <div class="campo">
+          <label for="proveedor">Proveedor</label>
+          <input type="radio" name="tipo-cliente" id="proveedor" value="proveedor">
+        </div>
+        <div class="campo">
+          <label for="categorias">Categorias: </label>
+          <input list="categorias" name="categorias">
+          <datalist id="categorias">
+            <option value="Mexico">
+            <option value="Maroco">
+            <option value="Miami">
+            <option value="Miroslava">
+          </datalist>
+        </div>
       </fieldset>
+
+
     </form>
   </main>
 
