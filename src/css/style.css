@@ -313,3 +313,20 @@ h3 { font-size:3rem }
   width: 60rem;
 }
 /***** End Section *****/
+
+/***** GALERIA PAGE *********************/
+.images-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} 
+.images-list img {
+  max-height: 20rem;
+  width: 40rem;
+  object-fit: cover;
+}
+
+/***** End GALERIA PAGE *********************/
