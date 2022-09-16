@@ -330,3 +330,31 @@ h3 { font-size:3rem }
 }
 
 /***** End GALERIA PAGE *********************/
+
+/***** Formulario *****/
+.formulario {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.formulario fieldset {
+  border-width: 2px;
+  margin-bottom: 2rem;
+}
+.formulario legend {
+  width: 100%;
+  background-color: var(--color-secundario);
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.campo label {
+  flex-basis: 10rem;
+}
+/***** End Formulario *****/

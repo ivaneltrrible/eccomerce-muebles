@@ -30,7 +30,7 @@
 
   <main class="container">
     <h2 class="text-center">Guia de Procesadores</h2>
-    <form action="">
+    <form action="" class="formulario">
 
 
       <fieldset>
@@ -38,24 +38,24 @@
 
         <div class="campo">
           <label for="nombre">Nombre: </label>
-          <input type="text" name="" id="nombre" placeholder="Coloca tu Nombre">
+          <input type="text" name="" id="nombre" placeholder="Coloca tu Nombre" required>
         </div>
 
         <div class="campo">
           <label for="asunto">Asunto: </label>
-          <input type="text" name="" id="asunto" placeholder="Coloca tu Asunto">
+          <input type="text" name="" id="asunto" placeholder="Coloca tu Asunto" required>
         </div>
         <div class="campo">
           <label for="email">Email: </label>
-          <input type="email" name="" id="email" placeholder="Coloca tu Email">
+          <input type="email" name="" id="email" placeholder="Coloca tu Email" required>
         </div>
         <div class="campo">
           <label for="tel">Telefono: </label>
-          <input type="tel" name="" id="tel" placeholder="Coloca tu Telefono">
+          <input type="tel" name="" id="tel" placeholder="Coloca tu Telefono" required>
         </div>
         <div class="campo">
           <label for="mensaje">Telefono: </label>
-          <textarea name="" id="mensaje" cols="20" rows="10"></textarea>
+          <textarea name="" id="mensaje" cols="20" rows="10"></textarea required>
         </div>
 
       </fieldset>  
@@ -75,7 +75,7 @@
         </div>
       </fieldset>
 
-
+      
       <fieldset>
         <legend>Information Extra</legend>
         <div class="campo">
@@ -98,7 +98,7 @@
         </div>
       </fieldset>
 
-
+      <input type="submit" value="Enviar Datos">
     </form>
   </main>
 
