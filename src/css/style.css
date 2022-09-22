@@ -50,6 +50,7 @@ h3 { font-size:3rem }
 }
 .btn:hover {
   background-color: var(--background-color-btn-hover);
+  cursor: pointer;
 }
 .container {
   max-width: 120rem;
@@ -356,5 +357,12 @@ h3 { font-size:3rem }
 }
 .campo label {
   flex-basis: 10rem;
+}
+.campo input:not([type="radio"]),
+.campo select,
+.campo textarea{
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
 }
 /***** End Formulario *****/
