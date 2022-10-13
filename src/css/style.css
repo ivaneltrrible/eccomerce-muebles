@@ -70,7 +70,7 @@ h3 {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  width: 75%;
+  /*width: 75%;*/ 
 }
 .nombre-sitio {
   margin-top: 5rem;
@@ -84,7 +84,7 @@ h3 {
   text-align: center;
 }
 .mp-5 {
-  padding-top: 5rem;
+  padding: 3rem 0;
 }
 .max-width-30 {
   max-width: 30rem;
@@ -158,12 +158,21 @@ h3 {
   100%{ width: 14.8rem }
 }
 /**LISTADO CATEGORIAS ************************************************ */
-.listado-categorias {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+@media (min-width: 768px) {
+  .listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
-
+.categoria {
+  margin-bottom: 2rem
+}
+@media (min-width: 768px) {
+  .categoria {
+    margin-bottom: 0;
+  }
+}
 .categoria a {
   margin: 0;
   text-align: center;
@@ -172,6 +181,12 @@ h3 {
   background-color: var(--color-principal);
   color: #e1e1e1;
   transition: border-radius 0.5s ease;
+}
+.categorias h2 {
+  margin: 0;
+}
+.categoria img {
+  width: 100%;
 }
 .categoria a:hover {
   background-color: var(--color-secundario);
@@ -184,7 +199,7 @@ h3 {
 .sobre-nosotros {
   margin-top: 2rem;
   padding: 10rem 0;
-  background-image: linear-gradient( to right, transparent 50%, var(--color-principal) 50%, black 100%),
+  background-image: linear-gradient( to right, transparent 50%, var(--color-principal) 50%, rgb(70, 67, 67) 100%),
   url('../ImagenesGamer/sobre-nosotros-gamer.jpg');
   background-repeat: no-repeat;
   background-position: left center;
@@ -196,7 +211,8 @@ h3 {
 }
 .texto-nosotros {
   flex-basis: 50%;
-  padding-left: 10rem;
+  padding-left: 5rem;
+  font-weight: 700;
 }
 .texto-nosotros h2 {
   color: #e1e1e1;
