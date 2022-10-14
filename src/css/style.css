@@ -196,21 +196,21 @@ h3 {
 /**Box Model */
 
 /** BLOQUE DE SOBRE NOSOTROS ******/
+/* SECTION */
 .sobre-nosotros {
   margin-top: 2rem;
   background-image: linear-gradient( to bottom, transparent 50%, var(--color-principal) 50%, rgb(70, 67, 67) 100%),
   url('../ImagenesGamer/sobre-nosotros-gamer.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%, 120rem;
+    background-size: 100%, 70rem;
 }
 @media (min-width: 768px) {
   .sobre-nosotros {
-    margin-top: 2rem;
-    padding: 10rem 0;
     background-image: linear-gradient( to right, transparent 50%, var(--color-principal) 50%, rgb(70, 67, 67) 100%),
     url('../ImagenesGamer/sobre-nosotros-gamer.jpg');
     background-position: left center;
+    background-size: 100%, 120rem;
   }
 }
 .sobre-nosotros-grid {
@@ -223,12 +223,13 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-column: 2 / 3;
     grid-template-rows: unset;
+    column-gap: 10rem;
   }
 }
 .texto-nosotros {
   grid-row: 2 / 3;
-  padding-left: 5rem;
   font-weight: 700;
+  padding: 5rem;
 }
 @media (min-width: 768px) {
   .texto-nosotros {
