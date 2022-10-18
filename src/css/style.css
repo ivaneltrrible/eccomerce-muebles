@@ -209,7 +209,7 @@ h3 {
 .sobre-nosotros {
   margin-top: 2rem;
   background-image: linear-gradient( to bottom, transparent 50%, var(--color-principal) 50%, rgb(70, 67, 67) 100%),
-  url('../ImagenesGamer/sobre-nosotros-gamer.jpg');
+  url('../ImagenesGamerCompress/tinified/sobre-nosotros-gamer.jpg');
     background-repeat: no-repeat;
     background-position: center, center top;
     background-size: 100%, 86rem;
@@ -217,7 +217,7 @@ h3 {
 @media (min-width: 768px) {
   .sobre-nosotros {
     background-image: linear-gradient( to right, transparent 50%, var(--color-principal) 50%, rgb(70, 67, 67) 100%),
-    url('../ImagenesGamer/sobre-nosotros-gamer.jpg');
+    url('../ImagenesGamerCompress/tinified/sobre-nosotros-gamer.jpg');
     background-position: center right;
     background-size: 100%, 180rem;
   }
